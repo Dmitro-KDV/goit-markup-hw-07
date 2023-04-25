@@ -1,0 +1,281 @@
+@media screen and (min-width: 428px) {
+    .container {
+        width: 428px;
+    } 
+    .hero-title {
+        width: 320px;
+        font-size: 36px;
+    }
+}
+@media screen and (min-width: 768px) {
+     .container {
+          width: 768px;
+     } 
+
+     .vector-btn {
+        display: none;
+     }
+     .page-header .container { 
+        padding-bottom: 0;
+    }
+     .site-nav {
+        display: flex;
+        padding: 0;
+        gap: 40px;
+        flex-direction: row;
+        align-items: flex-start;
+        width: 261px;
+        height: 48px;
+        transition: color var(--transform-hover);
+    }
+    .header-address {
+        display: flex;
+        align-items: flex-start;
+        font-style: normal;
+    }
+    .auht-nav {
+        list-style: none;
+        gap: 12px;
+        transition: color var(--transform-hover);
+    }
+    .site-nav .link {
+        margin-left: 0;
+        font-weight: bold;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        color: var(--logo-color);
+        letter-spacing: 0.02em;
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+        display: inline-block;
+    }
+    .site-nav .link:hover,
+    .site-nav .link:focus {
+        color: var(--fishnet-text-color);
+    }
+    .site-nav .link.current {
+        color: var(--fishnet-text-color);
+    }
+    .site-nav .link.current::after {
+        content: '';
+        width: 100%;
+        height: 4px;    
+        margin-top: 20px;
+        background: currentColor;
+        border-radius: 2px;
+        display: inline-block;
+    }
+    .auht-nav .link {
+        margin-left: 0;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: var(--text-list);
+        font-style: normal;
+    }
+    .auht-nav .link:hover,
+    .auht-nav .link:focus {
+        color: var(--fishnet-text-color);
+    }
+
+     .hero {
+        background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7), 
+        rgba(46, 47, 66, 0.7)),
+        url(../images/people-office-tablet.jpg);
+        padding: 188px 0;
+     }
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      .hero {
+        background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7), 
+        rgba(46, 47, 66, 0.7)),
+        url(../images/people-office-tablet-2x.jpg);
+      }
+    }
+     .hero-title {
+        width: 496px;
+        font-size: 56px;
+        line-height: 1.07;
+     }
+     .feature-list {
+         width: calc((100% - 24px) / 2);
+         margin: 0;
+     } 
+     .feature-title {
+         text-align:left;
+         text-transform: capitalize;
+     }
+    .specialist > .container {
+         width: 582px;
+     }
+    .specialist-group {
+         gap: 64px 24px;
+     }
+    .specialist-list {
+         flex-basis: calc((100% - 24px) / 2);
+         margin: 0;
+     }
+    .customers > .container {
+        width: 582px;
+    }
+     .customers-list {
+         flex-basis: calc((100% - 48px) / 3);
+     }
+     .customers-wrap {
+         gap: 72px 24px;
+     }
+    .footer > .container {
+        width: 582px;
+    }
+    .footer .tablet {
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-menu {
+        display: flex;
+        gap: 24px;
+        margin-bottom: 72px;
+    }
+    .footer .footer-log {
+        max-width: 264px;
+        padding: 0;
+        margin: 0;
+        text-align: left;
+    }
+    .footer-wrap {
+        margin: 0;
+    }
+    .footer-title {
+        text-align: left;
+    }
+    .footer-form {
+        display: flex;
+        gap: 24px;
+    }
+    .footer input {
+        width: 264px;
+        margin-bottom: 0;
+    }
+    .footer .footer-btn {
+        margin: 0;
+    }
+}
+@media screen and (min-width: 1158px) {
+     .container {
+          width: 1158px;
+     } 
+     .auht-nav {
+        display: flex;
+        list-style: none;
+        gap: 40px;
+        transition: color var(--transform-hover);
+    }
+     .hero {
+        background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7), 
+      rgba(46, 47, 66, 0.7)),
+      url(../images/people-office.jpg);
+     }
+     @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      .hero {
+        background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7), 
+        rgba(46, 47, 66, 0.7)),
+        url(../images/people-office-2x.jpg);
+      }
+    }
+     .section {
+         padding-top: 120px;
+         padding-bottom: 120px;
+     }
+     .feature-wrap {
+        display: block;
+        width: 100%;
+        height: 112px;
+        background: #F4F4FD;
+        border-radius: 4px;
+        padding: 24px 100px;
+        margin-bottom: 8px;
+    }
+     .feature-title {
+         font-weight: 500;
+         font-size: 20px;
+         line-height: 1.2;
+     }
+     .feature-list {
+         width: calc((100% - 72px) / 4);
+     } 
+     .profile {
+         display: block;
+         padding-top: 0;
+     }
+     .specialist > .container {
+         width: 1158px;
+     }
+     .specialist-list {
+         flex-basis: calc((100% - 72px) / 4);
+     }
+     .specialist {
+         padding: 120px 0;
+     }
+     .specialist-group {
+         gap: 24px;
+     }
+    .customers > .container {
+        width: 1158px;
+    }
+     .customers-wrap {
+         gap: 24px;
+     }
+     .customers-list {
+         flex-basis: calc((100% - 120px) / 6);
+     }
+     .footer {
+        padding: 100px 0 100px 0;
+    }
+    .footer > .container {
+        width: 1158px;
+    }
+    .footer .container {
+        display: flex;
+    }
+    .footer .tablet {
+        display: flex;
+        flex-direction: row;
+    }
+    .footer .footer-log {
+        display: flex;
+        flex-direction: column;
+        width: 264px;
+        padding: 0;
+        margin: 0;
+        margin-right: 120px;
+        text-align: left;
+    }
+    .footer-wrap {
+        margin-bottom: 0;
+        margin-right: 80px;
+    }
+    .footer-title {
+        text-align: left;
+    }
+    .footer-form {
+        display: flex;
+        gap: 24px;
+    }
+    .footer input {
+        width: 264px;
+        margin-bottom: 0;
+    }
+    .footer .footer-btn {
+        margin: 0;
+    }
+}

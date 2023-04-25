@@ -46,7 +46,25 @@
                     <li class="goods-list">
                         <a href="" class="goods-link-wrapper link">
                             <div class="goods-img">
-                                <img src="./images/Banking.jpg" alt="Banking" width="360" class="images">
+                                <picture>
+                                    <source
+                                        srcset="./images/Banking.jpg 1x,
+                                                ./images/Banking-2x.jpg 2x"
+                                        media="(min-width: 1158px)"
+                                    />
+                                    <source
+                                        srcset="./images/Banking-tablet.jpg 1x,
+                                                ./images/Banking-tablet-2x.jpg 2x"
+                                        media="(min-width: 768px)"
+                                    />
+                                    <source
+                                        srcset="./images/Banking-mobil.jpg 1x,
+                                                ./images/Banking-mobil-2x.jpg 2x"
+                                        media="(max-width: 767px)"
+                                    />
+                                    <img src="./images/Banking-mobil.jpg" alt="Banking" width="396" class="images">
+                                </picture>
+                                
                                 <p class="overlay text">14 Stylish and User-Friendly App Design Concepts · 
                                     Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · 
                                     Cloud Storage App</p>
