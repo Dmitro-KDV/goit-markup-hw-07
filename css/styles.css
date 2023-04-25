@@ -79,7 +79,6 @@ button {
     padding: 24px 16px;
     display: flex;
     justify-content: space-between;
-    margin: 0;
 }
 .logo {
     color: var(--button-color);
