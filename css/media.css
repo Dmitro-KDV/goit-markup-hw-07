@@ -306,6 +306,7 @@
     }
     .footer-menu {
         margin: 0;
+        gap: 0;
     }
     .footer .tablet {
         display: flex;

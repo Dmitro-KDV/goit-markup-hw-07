@@ -283,6 +283,9 @@ button {
     padding-right: 82px; */
 
 }
+.specialist-group {
+    justify-content: center;
+}
 .specialist-list {
     background-color: var(--text-color);
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -334,6 +337,7 @@ button {
     display: flex;
     flex-wrap: wrap;
     gap: 72px 16px;
+    justify-content: center;
 }
 .customers-list {
     width: 168px;
