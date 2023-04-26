@@ -250,7 +250,6 @@ button {
 {
     display: flex;
     flex-wrap: wrap;
-    gap: 24px;
 }
 .feature-wrap {
     display: none;
@@ -289,7 +288,8 @@ button {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     border-radius: 0px 0px 4px 4px;
     text-align: center;
-    flex-basis: 100%;
+    /* flex-basis: 100%; */
+    width: 264px;
     margin-bottom: 72px;
 }
 .specialist-list:last-child {
@@ -466,8 +466,8 @@ input::placeholder {
 }
 
 .section-goods {
-    padding-top: 96px;
-    padding-bottom: 120px;
+    padding-top: 48px;
+    padding-bottom: 48px;
 }
 .menu-nav .link-btn {
     font-family: "Roboto", sans-serif;
@@ -487,9 +487,9 @@ input::placeholder {
 }
 .menu-nav {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
     gap: 24px;
-    margin: 0 auto 72px;
+    margin: 0 auto 48px;
 }
 .menu-nav .link-btn:hover,
 .menu-nav .link-btn:focus {
@@ -498,15 +498,19 @@ input::placeholder {
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .section-goods .goods {
-    display: flex;
+    /* display: flex;
     flex-wrap: wrap;
-    gap: 48px 24px;
+    gap: 48px 24px; */
 }
 .goods .goods-list {
     background: var(--text-color);
     border: 1px solid #E7E9FC;
-    width: calc((100% - 48px) / 3);
+    /* width: calc((100% - 48px) / 3); */
+    width: 100%;
     transition: box-shadow var(--transform-hover);
+}
+.goods-list:not(:last-child) {
+    margin-bottom: 48px;
 }
 .goods .goods-list:hover {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -579,7 +583,9 @@ input::placeholder {
     width: 24px;
     height: 24px;
     border: 1px solid rgba(0, 0, 0, 0.1);
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-left: auto;
     transition: background-color var(--transform-hover);
   }
